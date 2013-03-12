@@ -1,0 +1,30 @@
+<Widget>
+    <Kind>4</Kind>
+    <Name>CAM1_X</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>CAM1_X</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>CAM2_X</Name>
+    <Value>338</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>CAM2_Y</Name>
+    <Value>251</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>CAM3_X</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>CAM3_Y</Name>
+    <Value>467</Value>
+</Widget>
