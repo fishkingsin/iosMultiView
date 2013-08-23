@@ -2,10 +2,11 @@
 
 #include "ofMain.h"
 #include "ofxAssimpModelLoader.h"
-#include "ofxUI.h"
+
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
-
+#define NUM_VIEWPORT 4
+#define NUM_VIEWPORT_POS NUM_VIEWPORT*2
 class testApp : public ofxiPhoneApp{
 public:
 	void setup();
@@ -29,18 +30,16 @@ public:
 	void deviceOrientationChanged(int newOrientation);
 	
 	
-	ofRectangle viewport3D[3];
-	
+	ofRectangle viewport3D[NUM_VIEWPORT];
+    
 	ofRectangle viewPort;
-	ofCamera camera[3];
+	ofCamera camera[NUM_VIEWPORT];
 	ofEasyCam easyCam;
 	ofxAssimpModelLoader model;
-	ofFbo fbo[3];
 	
-	void guiEvent(ofxUIEventArgs &e);
-	ofxUICanvas *gui,*gui1;
-	float rot[9];
-	float pos[6];
-		ofLight	light;
-	float animationTime;
-};
+	
+	
+	float pos[NUM_VIEWPORT_POS];
+    
+	ofLight	light;
+	float animationTime;};
